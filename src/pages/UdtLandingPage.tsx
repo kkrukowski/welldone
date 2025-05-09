@@ -15,6 +15,7 @@ import ContactFormSection from './udt/components/ContactFormSection';
 import FinalCTASection from './udt/components/FinalCTASection';
 import NavigationMenu from './udt/components/NavigationMenu';
 import type { FormData } from './udt/types';
+import TestSupabase from "@/components/TestSupabase";  
 
 const UdtLandingPage = () => {
   const { trackEvent } = useEventTracking();
@@ -127,6 +128,8 @@ const UdtLandingPage = () => {
       </Helmet>
       
       <NavigationMenu trackLinkClick={trackLinkClick} trackCTAClick={trackCTAClick} />
+
+      <TestSupabase />
       
       {/* Add margin-top to account for fixed navigation */}
       <div className="pt-16">
